@@ -1,7 +1,12 @@
 # hector_SA
 
-change ```val n``` in ```hector_template/playground/dynamic/src/test.scala/TestSystolic```
+### Installation
+1. Hector from https://github.com/pku-liang/Hector
+2. Chisel templates from https://github.com/xuruifan/hector_template/
 
+### Run example
+0. Generate HEC IR
+change ```val n``` in ```hector_template/playground/dynamic/src/test.scala/TestSystolic```
 ```sh
 python3 generate.py 8
 hector-opt hec.mlir --dump-chisel > systolic_array.scala
